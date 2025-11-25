@@ -49,17 +49,17 @@ const OurPhilosophy = () => {
                 viewport={{ once: true }}
                 className="mt-8"
               >
-                &quot;“Instagram is built to share your best self. LoA is built
-                to understand your whole self. **Not built for followers — built
-                for your future self.**” **Bring together your thoughts, photos,
-                and memories — and reflect on your life in one private,
+                &quot;“Instagram is built to share your best self. TaskGate is
+                built to understand your whole self. **Not built for followers —
+                built for your future self.**” **Bring together your thoughts,
+                photos, and memories — and reflect on your life in one private,
                 meaningful space.** *Not built for followers — built for your
                 future self.*.&quot;
               </motion.p>
             </article>
             <Image
               src="/mockups/workImg.webp"
-              alt="LoA Mockup"
+              alt="TaskGate Mockup"
               className="w-full"
               width={500}
               height={400}

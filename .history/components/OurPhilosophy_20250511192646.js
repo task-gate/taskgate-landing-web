@@ -58,7 +58,7 @@ const OurPhilosophy = () => {
             </article>
             <Image
               src="/mockups/workImg.webp"
-              alt="LoA Mockup"
+              alt="TaskGate Mockup"
               className="w-full"
               width={500}
               height={400}

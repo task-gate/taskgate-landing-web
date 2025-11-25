@@ -75,7 +75,7 @@ const AppFeatures = () => {
             viewport={{ once: true }}
             className="text-lg text-gray-600 max-w-2xl mx-auto"
           >
-            Discover how LoA transforms every phone interaction into an
+            Discover how TaskGate transforms every phone interaction into an
             opportunity for conscious awareness, manifestation practice, and
             energetic alignment.
           </motion.p>

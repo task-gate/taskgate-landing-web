@@ -3,7 +3,7 @@ import Image from "next/image"; // If using Next.js
 
 const GooglePlayDownloadButton = () => {
   const androidUrl =
-    "https://play.google.com/store/apps/details?id=com.loa.lawofattraction.prod";
+    "https://play.google.com/store/apps/details?id=com.tkg.taskgate.prod";
   const iosAppId = "6740745547";
   const androidPackageName = "com.ever.journal";
 

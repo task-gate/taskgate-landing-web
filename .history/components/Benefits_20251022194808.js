@@ -5,7 +5,7 @@ export const features = [
   {
     id: "01",
     title: "Conscious App Interruption",
-    desc: "Transform mindless scrolling into mindful moments. LoA gently interrupts app usage with personalized affirmations and manifestation reminders to keep you aligned with your highest self.",
+    desc: "Transform mindless scrolling into mindful moments. TaskGate gently interrupts app usage with personalized affirmations and manifestation reminders to keep you aligned with your highest self.",
   },
   {
     id: "02",
@@ -20,7 +20,7 @@ export const features = [
   {
     id: "04",
     title: "Manifestation Goal Integration",
-    desc: "Connect your digital habits with your manifestation goals. LoA helps you stay focused on attracting your desires by creating conscious pauses before potentially energy-draining activities.",
+    desc: "Connect your digital habits with your manifestation goals. TaskGate helps you stay focused on attracting your desires by creating conscious pauses before potentially energy-draining activities.",
   },
   {
     id: "05",
@@ -72,7 +72,7 @@ const Benefits = () => {
             </h3>
             <p className="mt-5 text-justify md:max-w-[60%] md:text-center">
               We believe your thoughts, emotions, and everyday moments deserve
-              more than a scroll and a like. LoA is your private space to make
+              more than a scroll and a like. TaskGate is your private space to make
               sense of your life — not for followers, but for your future self
             </p>
           </article>

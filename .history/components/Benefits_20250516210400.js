@@ -10,7 +10,7 @@ const features = [
   {
     id: "02",
     title: "Your Life, All in One Place",
-    desc: "Collect your thoughts, photos, emotions, and moments in a private timeline. LoA becomes the center of your story.",
+    desc: "Collect your thoughts, photos, emotions, and moments in a private timeline. TaskGate becomes the center of your story.",
   },
   {
     id: "03",
@@ -64,9 +64,10 @@ const Benefits = () => {
               .
             </h3>
             <p className="mt-6 text-base text-center text-secondary/90">
-              LoA isn’t just about capturing memories — it’s about making sense
-              of them. With AI guidance, emotional awareness, and a beautifully
-              organized timeline, your life story unfolds as you live it.
+              TaskGate isn’t just about capturing memories — it’s about making
+              sense of them. With AI guidance, emotional awareness, and a
+              beautifully organized timeline, your life story unfolds as you
+              live it.
             </p>
           </motion.div>
         </div>

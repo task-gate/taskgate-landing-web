@@ -18,7 +18,7 @@ const steps = [
     number: "03",
     title: "Pause & Reflect",
     description:
-      "When you tap a monitored app, LoA pauses your impulse with a beautiful affirmation screen.",
+      "When you tap a monitored app, TaskGate pauses your impulse with a beautiful affirmation screen.",
   },
   {
     number: "04",
@@ -47,7 +47,7 @@ const HowItWorks = () => {
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-600 bg-clip-text text-transparent">
-              How LoA Works
+              How TaskGate Works
             </span>
           </h2>
           <p className="text-white text-lg md:text-xl max-w-3xl mx-auto font-medium">
@@ -73,7 +73,7 @@ const HowItWorks = () => {
               <div className="relative">
                 <img
                   src="/mock/mock1.png"
-                  alt="LoA App Interface"
+                  alt="TaskGate App Interface"
                   className="w-full max-w-sm lg:max-w-md h-auto drop-shadow-2xl"
                 />
               </div>

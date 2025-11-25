@@ -17,7 +17,7 @@ const ReadyToStart = () => {
           </h2>
           <p className="text-left max-w-[80%] leading-8">
             Begin your conscious digital living journey today—your manifestation
-            practice starts with LoA!
+            practice starts with TaskGate!
           </p>
         </div>
         <div className="self-start md:self-end">

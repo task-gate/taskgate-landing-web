@@ -5,27 +5,32 @@ const steps = [
   {
     number: "01",
     title: "Set Your Intentions",
-    description: "Create personalized affirmations that align with your highest self and manifestation goals."
+    description:
+      "Create personalized affirmations that align with your highest self and manifestation goals.",
   },
   {
     number: "02",
     title: "Choose Your Apps",
-    description: "Select which apps to monitor - social media, games, or any app that tends to distract from your goals."
+    description:
+      "Select which apps to monitor - social media, games, or any app that tends to distract from your goals.",
   },
   {
     number: "03",
     title: "Pause & Reflect",
-    description: "When you tap a monitored app, LoA pauses your impulse with a beautiful affirmation screen."
+    description:
+      "When you tap a monitored app, TaskGate pauses your impulse with a beautiful affirmation screen.",
   },
   {
     number: "04",
     title: "Make Conscious Choices",
-    description: "Take a breath, read your affirmation, and decide if this aligns with what you want to attract."
+    description:
+      "Take a breath, read your affirmation, and decide if this aligns with what you want to attract.",
   },
   {
     number: "05",
     title: "Build Awareness",
-    description: "Track your digital energy patterns and celebrate your journey toward conscious living."
+    description:
+      "Track your digital energy patterns and celebrate your journey toward conscious living.",
   },
 ];
 
@@ -42,7 +47,7 @@ const HowItWorks = () => {
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             <span className="bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-600 bg-clip-text text-transparent">
-              How LoA Works
+              How TaskGate Works
             </span>
           </h2>
           <p className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto">
@@ -63,12 +68,12 @@ const HowItWorks = () => {
             <div className="relative">
               {/* Glow effect behind phone */}
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500/30 to-pink-500/30 blur-3xl rounded-full scale-110"></div>
-              
+
               {/* Phone image */}
               <div className="relative">
                 <img
                   src="/mock/mock1.png"
-                  alt="LoA App Interface"
+                  alt="TaskGate App Interface"
                   className="w-full max-w-sm lg:max-w-md h-auto drop-shadow-2xl"
                 />
               </div>
@@ -90,7 +95,7 @@ const HowItWorks = () => {
                 {index < steps.length - 1 && (
                   <div className="absolute left-6 top-16 w-0.5 h-12 bg-gradient-to-b from-purple-300 to-transparent"></div>
                 )}
-                
+
                 {/* Step card */}
                 <div className="flex gap-4 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-purple-400/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
                   {/* Number circle */}
@@ -99,7 +104,7 @@ const HowItWorks = () => {
                       {step.number}
                     </div>
                   </div>
-                  
+
                   {/* Content */}
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-purple-600 transition-colors">
@@ -128,7 +133,8 @@ const HowItWorks = () => {
               <span className="font-semibold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                 Create micro-moments of awareness
               </span>{" "}
-              throughout your day and redirect your energy toward what you truly want to attract
+              throughout your day and redirect your energy toward what you truly
+              want to attract
             </p>
           </div>
         </motion.div>

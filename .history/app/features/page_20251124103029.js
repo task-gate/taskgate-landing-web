@@ -103,7 +103,7 @@ export default function Features() {
 
               <div className="relative bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-2xl">
                 <p className="text-lg md:text-xl text-white/90 leading-relaxed font-medium">
-                  LoA combines{" "}
+                  TaskGate combines{" "}
                   <span className="bg-gradient-to-r from-purple-300 via-pink-300 to-purple-300 bg-clip-text text-transparent font-bold inline-block">
                     digital awareness tracking
                   </span>

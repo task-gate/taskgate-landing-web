@@ -41,12 +41,12 @@ const Navbar = () => {
         >
           <Image
             src="/app_logo.svg"
-            alt="LoA Logo"
+            alt="TaskGate Logo"
             width={32}
             height={32}
             className="mr-2"
           />
-          LoA
+          TaskGate
         </Link>
 
         <ul className="hidden md:flex space-x-12">

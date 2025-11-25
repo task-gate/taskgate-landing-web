@@ -242,7 +242,7 @@ const Contact = () => {
                     onBlur={formik.handleBlur}
                     checked={formik.values.areaOfInterest.loaUsage}
                   />
-                  <span className="ml-2 text-white">LoA Usage</span>
+                  <span className="ml-2 text-white">TaskGate Usage</span>
                 </label>
                 <label className="inline-flex items-center cursor-pointer hover:bg-white/5 p-2 rounded-lg transition-colors">
                   <input

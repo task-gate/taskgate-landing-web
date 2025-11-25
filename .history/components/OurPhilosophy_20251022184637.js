@@ -51,7 +51,7 @@ const OurPhilosophy = () => {
               >
                 Most platforms are built to show the world who you are.{" "}
                 <strong>
-                  LoA is built to help you understand who you’ve become.
+                  TaskGate is built to help you understand who you’ve become.
                 </strong>{" "}
                 Bring together your thoughts, photos, and memories — and reflect
                 on your life in one private, meaningful space.
@@ -61,7 +61,7 @@ const OurPhilosophy = () => {
             </article>
             <Image
               src="/mockups/workImg.webp"
-              alt="LoA Mockup"
+              alt="TaskGate Mockup"
               className="w-full"
               width={500}
               height={400}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const steps = [
   "Set your manifestation intentions and create personalized affirmations that align with your highest self.",
   "Choose which apps to monitor - social media, games, or any app that tends to distract from your goals.",
-  "When you tap a monitored app, LoA pauses your impulse with a beautiful affirmation screen.",
+  "When you tap a monitored app, TaskGate pauses your impulse with a beautiful affirmation screen.",
   "Take a conscious breath, read your affirmation, and decide: does this align with what I want to attract?",
   "Build awareness of your digital energy patterns and celebrate your journey toward conscious living.",
 ];
@@ -20,7 +20,7 @@ const HowItWorks = () => {
         <article className="bg-white/20 backdrop-blur-xl border border-white/30 rounded-3xl p-8 shadow-2xl">
           <div className="flex flex-col items-center lg:items-start justify-center">
             <h2 className="text-h2 lg:text-h3 font-bold text-center bg-gradient-to-r from-indigo-900 to-purple-900 bg-clip-text text-transparent">
-              How LoA Transforms Your Digital Life
+              How TaskGate Transforms Your Digital Life
             </h2>
             <span className="w-16 h-1 mt-3 bg-gradient-to-r from-purple-600 to-indigo-600" />
           </div>
@@ -51,10 +51,10 @@ const HowItWorks = () => {
                 viewport={{ once: true }}
                 className="text-p lg:text-lg mt-5 text-gray-600"
               >
-                LoA applies the Law of Attraction to your digital habits. By
-                pausing before distractions with personalized affirmations, you
-                redirect your energy toward what you truly want to attract into
-                your life, creating micro-moments of conscious awareness
+                TaskGate applies the Law of Attraction to your digital habits.
+                By pausing before distractions with personalized affirmations,
+                you redirect your energy toward what you truly want to attract
+                into your life, creating micro-moments of conscious awareness
                 throughout your day.
               </motion.p>
               <motion.div
@@ -68,7 +68,7 @@ const HowItWorks = () => {
                 className="mt-8"
               >
                 <h4 className="text-lg font-semibold mb-4 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                  The LoA Process:
+                  The TaskGate Process:
                 </h4>
                 <ul className="space-y-3">
                   {steps.map((step, index) => (

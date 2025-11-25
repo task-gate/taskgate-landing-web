@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full flex items-center justify-center mr-2">
             <span className="text-white text-lg">✨</span>
           </div>
-          LoA
+          TaskGate
         </Link>
 
         <ul className="hidden md:flex space-x-12">

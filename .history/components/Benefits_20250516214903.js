@@ -11,7 +11,7 @@ export const features = [
   {
     id: "02",
     title: "Your Life, All in One Place",
-    desc: "Collect your thoughts, photos, emotions, and moments in a private timeline. LoA becomes the center of your story",
+    desc: "Collect your thoughts, photos, emotions, and moments in a private timeline. TaskGate becomes the center of your story",
   },
   {
     id: "03",
@@ -70,8 +70,9 @@ const Benefits = () => {
             </h3>
             <p className="mt-5 text-justify md:max-w-[60%] md:text-center">
               We believe your thoughts, emotions, and everyday moments deserve
-              more than a scroll and a like. LoA is your private space to make
-              sense of your life — not for followers, but for your future self
+              more than a scroll and a like. TaskGate is your private space to
+              make sense of your life — not for followers, but for your future
+              self
             </p>
           </article>
         </div>

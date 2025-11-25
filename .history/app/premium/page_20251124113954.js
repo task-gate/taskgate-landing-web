@@ -35,7 +35,7 @@ export default function Premium() {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="text-white text-h2 md:max-w-[70%] lg:max-w-[100%] lg:text-h4 font-bold text-left"
             >
-              Unlock Advanced Manifestation Tools with LoA Premium
+              Unlock Advanced Manifestation Tools with TaskGate Premium
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, scale: 1.25 }}
@@ -43,9 +43,9 @@ export default function Premium() {
               transition={{ delay: 0.8, duration: 0.5 }}
               className="text-white max-w-[85%] md:max-w-[70%] lg:max-w-[100%] md:leading-8 text-left"
             >
-              LoA Premium amplifies your manifestation practice with advanced
-              features designed to accelerate your Law of Attraction journey.
-              Access deeper insights, powerful visualization tools, and
+              TaskGate Premium amplifies your manifestation practice with
+              advanced features designed to accelerate your Law of Attraction
+              journey. Access deeper insights, powerful visualization tools, and
               exclusive content to attract your desires faster.
             </motion.p>
 
@@ -63,7 +63,7 @@ export default function Premium() {
           >
             <img
               src="/mock/mock3.png"
-              alt="LoA App Mockup"
+              alt="TaskGate App Mockup"
               className="w-auto h-auto max-w-[300px] lg:max-w-[350px]"
             />
           </motion.article>

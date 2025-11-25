@@ -20,12 +20,17 @@ const Footer = () => {
               href="/"
               className="flex items-center cursor-pointer font-ubuntu text-white md:text-xl font-bold"
             >
-              <Image src="/loa.svg" alt="LoA" width={30} height={30} />
-              LoA
+              <Image
+                src="/taskgate.svg"
+                alt="TaskGate"
+                width={30}
+                height={30}
+              />
+              TaskGate
             </Link>
             <small className="max-w-[80%] text-[#fff] text-[15] leading-[20.46px] lg:max-w-[50%]">
-              LoA is your personal biographer. We help you embark on a journey
-              of self-reflection, rediscovery, and storytelling.
+              TaskGate is your personal biographer. We help you embark on a
+              journey of self-reflection, rediscovery, and storytelling.
             </small>
           </section>
           <section className="">
@@ -85,7 +90,7 @@ const Footer = () => {
         <small className="flex items-center justify-center gap-1 text-white py-2">
           &copy;
           <span className="text-[14px] lg:text-[15px] text-[#fff]">
-            {`${currentYear} LoA AI. All Rights Reserved`}
+            {`${currentYear} TaskGate AI. All Rights Reserved`}
           </span>
         </small>
       </div>

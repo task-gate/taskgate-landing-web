@@ -23,11 +23,12 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-indigo-500 rounded-full flex items-center justify-center mr-2">
                 <span className="text-white text-lg">✨</span>
               </div>
-              LoA
+              TaskGate
             </Link>
             <small className="max-w-[80%] text-[#fff] text-[15] leading-[20.46px] lg:max-w-[50%]">
-              LoA brings the Law of Attraction to your digital life. Transform every 
-              phone interaction into a moment of conscious awareness and manifestation.
+              TaskGate brings the Law of Attraction to your digital life.
+              Transform every phone interaction into a moment of conscious
+              awareness and manifestation.
             </small>
           </section>
           <section className="">
@@ -87,7 +88,7 @@ const Footer = () => {
         <small className="flex items-center justify-center gap-1 text-white py-2">
           &copy;
           <span className="text-[14px] lg:text-[15px] text-[#fff]">
-            {`${currentYear} LoA AI. All Rights Reserved`}
+            {`${currentYear} TaskGate AI. All Rights Reserved`}
           </span>
         </small>
       </div>

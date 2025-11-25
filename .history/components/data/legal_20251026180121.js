@@ -4,7 +4,7 @@ export const privacyPolicy = [
   {
     id: uuid(),
     title: "Information We Collect",
-    text: "Loa is designed with privacy in mind. We do not collect any personal information unless you explicitly choose to provide it. Depending on how you use the app, we may collect the following minimal information:",
+    text: "TaskGate is designed with privacy in mind. We do not collect any personal information unless you explicitly choose to provide it. Depending on how you use the app, we may collect the following minimal information:",
     subtext: "a. App Usage Data (Optional & Anonymous)",
     subtext2:
       "To improve the app's performance and user experience, we may collect limited, anonymized data such as:",
@@ -17,7 +17,7 @@ export const privacyPolicy = [
       "This data does not contain any personal identifiers (such as name, email, or precise location).",
     subtext3: "b. Permissions",
     subtext4:
-      "Loa may request permission to detect when certain apps are opened — only to display mindful prompts before launching them. We do not read or track your app content, messages, or browsing history.",
+      "TaskGate may request permission to detect when certain apps are opened — only to display mindful prompts before launching them. We do not read or track your app content, messages, or browsing history.",
     subtext5: "c. Optional Cloud Sync (if enabled)",
     subtext6:
       "If future updates allow syncing affirmations or user preferences via cloud backup, we may temporarily store this data under your account. You will be clearly informed and able to opt out at any time.",
@@ -38,7 +38,7 @@ export const privacyPolicy = [
   {
     id: uuid(),
     title: "Third-Party Services",
-    text: "Loa may integrate trusted third-party SDKs to help us maintain app stability and usage insights, including:",
+    text: "TaskGate may integrate trusted third-party SDKs to help us maintain app stability and usage insights, including:",
     list: [
       "Firebase Analytics / Crashlytics (Google LLC) — anonymized analytics and crash data",
       "RevenueCat (if premium features are added) — to manage in-app purchases securely via Google Play",
@@ -60,7 +60,7 @@ export const privacyPolicy = [
   {
     id: uuid(),
     title: "Children's Privacy",
-    text: "Loa is not intended for children under 13. We do not knowingly collect personal information from children. If we discover such data, it will be deleted immediately.",
+    text: "TaskGate is not intended for children under 13. We do not knowingly collect personal information from children. If we discover such data, it will be deleted immediately.",
   },
   {
     id: uuid(),
@@ -82,6 +82,6 @@ export const privacyPolicy = [
   {
     id: uuid(),
     title: "Contact Us",
-    text: "If you have any questions or concerns about this Privacy Policy or how Loa handles your data, please reach out through our contact form.",
+    text: "If you have any questions or concerns about this Privacy Policy or how TaskGate handles your data, please reach out through our contact form.",
   },
 ];

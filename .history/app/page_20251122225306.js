@@ -108,7 +108,7 @@ export default function Home() {
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300 font-bold">
                     conscious awareness
                   </span>
-                  . LoA interrupts digital distractions with personalized
+                  . TaskGate interrupts digital distractions with personalized
                   affirmations, helping you align your energy with your highest
                   intentions.
                 </p>
@@ -227,7 +227,7 @@ export default function Home() {
             The Law of Attraction teaches us that our thoughts, emotions, and
             focus shape our reality. When you align your energy with gratitude,
             clarity, and abundance, you naturally attract experiences that
-            reflect those states. LoA brings this ancient wisdom into your
+            reflect those states. TaskGate brings this ancient wisdom into your
             digital life.
           </motion.p>
 

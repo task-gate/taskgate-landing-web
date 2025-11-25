@@ -74,7 +74,7 @@ const Feature = () => {
 
           <article className="flex flex-col items-center justify-center mt-16">
             <p className="mt-5 text-justify md:max-w-[60%] md:text-center text-white/90">
-              LoA transforms every digital interaction into a manifestation
+              TaskGate transforms every digital interaction into a manifestation
               opportunity. With conscious interruptions, personalized
               affirmations, and energy pattern insights, your spiritual journey
               integrates seamlessly with your technology use.

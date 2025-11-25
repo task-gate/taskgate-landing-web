@@ -118,159 +118,173 @@ const Contact = () => {
               Fill the form below and we will be in touch.
             </p>
 
-          <motion.form
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-            onSubmit={formik.handleSubmit}
-            className="max-w-[500px] mx-auto flex flex-col justify-center"
-          >
-            <div className="mb-4">
-              <label htmlFor="name" className="block text-sm font-bold mb-2 text-white">
-                Name:
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.name}
-                className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full h-[41px] py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
-                placeholder="Name"
-              />
-              {formik.touched.name && formik.errors.name ? (
-                <div className="text-red-500 text-sm">{formik.errors.name}</div>
-              ) : null}
-            </div>
-
-            <article className="flex items-center gap-4">
+            <motion.form
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              onSubmit={formik.handleSubmit}
+              className="max-w-[500px] mx-auto flex flex-col justify-center"
+            >
               <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-bold mb-2 text-white">
-                  Email:
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-bold mb-2 text-white"
+                >
+                  Name:
                 </label>
                 <input
-                  type="email"
-                  id="email"
-                  name="email"
+                  type="text"
+                  id="name"
+                  name="name"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.email}
+                  value={formik.values.name}
                   className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full h-[41px] py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
-                  placeholder="Email"
+                  placeholder="Name"
                 />
-                {formik.touched.email && formik.errors.email ? (
+                {formik.touched.name && formik.errors.name ? (
                   <div className="text-red-500 text-sm">
-                    {formik.errors.email}
+                    {formik.errors.name}
+                  </div>
+                ) : null}
+              </div>
+
+              <article className="flex items-center gap-4">
+                <div className="mb-4">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-bold mb-2 text-white"
+                  >
+                    Email:
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}
+                    className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full h-[41px] py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+                    placeholder="Email"
+                  />
+                  {formik.touched.email && formik.errors.email ? (
+                    <div className="text-red-500 text-sm">
+                      {formik.errors.email}
+                    </div>
+                  ) : null}
+                </div>
+
+                <div className="mb-4">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-bold mb-2 text-white"
+                  >
+                    Phone Number:
+                  </label>
+                  <PhoneInput
+                    placeholder="Enter phone number"
+                    value={formik.values.phone}
+                    onChange={(phone) => formik.setFieldValue("phone", phone)}
+                    onBlur={() => formik.setFieldTouched("phone", true)}
+                    defaultCountry="us"
+                    name="phone"
+                    international
+                  />
+                  {formik.touched.phone && formik.errors.phone ? (
+                    <div className="text-red-500 text-sm">
+                      {formik.errors.phone}
+                    </div>
+                  ) : null}
+                </div>
+              </article>
+
+              <div className="mb-4">
+                <label
+                  htmlFor="comment"
+                  className="block text-sm font-bold mb-2 text-white"
+                >
+                  Comment:
+                </label>
+                <textarea
+                  name="comment"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.comment}
+                  rows="4"
+                  className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+                  placeholder="Additional details here"
+                />
+                {formik.touched.comment && formik.errors.comment ? (
+                  <div className="text-red-500 text-sm">
+                    {formik.errors.comment}
                   </div>
                 ) : null}
               </div>
 
               <div className="mb-4">
-                <label htmlFor="phone" className="block text-sm font-bold mb-2 text-white">
-                  Phone Number:
+                <label className="block text-white text-sm font-bold mb-2">
+                  Area of Concern:
                 </label>
-                <PhoneInput
-                  placeholder="Enter phone number"
-                  value={formik.values.phone}
-                  onChange={(phone) => formik.setFieldValue("phone", phone)}
-                  onBlur={() => formik.setFieldTouched("phone", true)}
-                  defaultCountry="us"
-                  name="phone"
-                  international
-                />
-                {formik.touched.phone && formik.errors.phone ? (
-                  <div className="text-red-500 text-sm">
-                    {formik.errors.phone}
-                  </div>
-                ) : null}
-              </div>
-            </article>
-
-            <div className="mb-4">
-              <label htmlFor="comment" className="block text-sm font-bold mb-2 text-white">
-                Comment:
-              </label>
-              <textarea
-                name="comment"
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                value={formik.values.comment}
-                rows="4"
-                className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
-                placeholder="Additional details here"
-              />
-              {formik.touched.comment && formik.errors.comment ? (
-                <div className="text-red-500 text-sm">
-                  {formik.errors.comment}
+                <div className="grid grid-cols-2 gap-2">
+                  <label className="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      className="form-checkbox h-5 w-5 text-purple-500 bg-white/20 border-white/30 rounded"
+                      name="areaOfInterest.loaUsage"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      checked={formik.values.areaOfInterest.loaUsage}
+                    />
+                    <span className="ml-2 text-white">TaskGate Usage</span>
+                  </label>
+                  <label className="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      className="form-checkbox h-5 w-5 text-purple-500 bg-white/20 border-white/30 rounded"
+                      name="areaOfInterest.adsSponsorship"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      checked={formik.values.areaOfInterest.adsSponsorship}
+                    />
+                    <span className="ml-2 text-white">Ads Sponsorship</span>
+                  </label>
+                  <label className="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      className="form-checkbox h-5 w-5 text-purple-500 bg-white/20 border-white/30 rounded"
+                      name="areaOfInterest.partnership"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      checked={formik.values.areaOfInterest.partnership}
+                    />
+                    <span className="ml-2 text-white">Partnership</span>
+                  </label>
+                  <label className="inline-flex items-center">
+                    <input
+                      type="checkbox"
+                      className="form-checkbox h-5 w-5 text-purple-500 bg-white/20 border-white/30 rounded"
+                      name="areaOfInterest.others"
+                      onChange={formik.handleChange}
+                      onBlur={formik.handleBlur}
+                      checked={formik.values.areaOfInterest.others}
+                    />
+                    <span className="ml-2 text-white">Others</span>
+                  </label>
                 </div>
-              ) : null}
-            </div>
-
-            <div className="mb-4">
-              <label className="block text-white text-sm font-bold mb-2">
-                Area of Concern:
-              </label>
-              <div className="grid grid-cols-2 gap-2">
-                <label className="inline-flex items-center">
-                  <input
-                    type="checkbox"
-                    className="form-checkbox h-5 w-5 text-purple-500 bg-white/20 border-white/30 rounded"
-                    name="areaOfInterest.loaUsage"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    checked={formik.values.areaOfInterest.loaUsage}
-                  />
-                  <span className="ml-2 text-white">LoA Usage</span>
-                </label>
-                <label className="inline-flex items-center">
-                  <input
-                    type="checkbox"
-                    className="form-checkbox h-5 w-5 text-purple-500 bg-white/20 border-white/30 rounded"
-                    name="areaOfInterest.adsSponsorship"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    checked={formik.values.areaOfInterest.adsSponsorship}
-                  />
-                  <span className="ml-2 text-white">Ads Sponsorship</span>
-                </label>
-                <label className="inline-flex items-center">
-                  <input
-                    type="checkbox"
-                    className="form-checkbox h-5 w-5 text-purple-500 bg-white/20 border-white/30 rounded"
-                    name="areaOfInterest.partnership"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    checked={formik.values.areaOfInterest.partnership}
-                  />
-                  <span className="ml-2 text-white">Partnership</span>
-                </label>
-                <label className="inline-flex items-center">
-                  <input
-                    type="checkbox"
-                    className="form-checkbox h-5 w-5 text-purple-500 bg-white/20 border-white/30 rounded"
-                    name="areaOfInterest.others"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    checked={formik.values.areaOfInterest.others}
-                  />
-                  <span className="ml-2 text-white">Others</span>
-                </label>
               </div>
-            </div>
 
-            <button
-              type="submit"
-              className="bg-gradient-to-r from-purple-500 to-pink-500 mt-2 active:scale-95 hover:from-purple-600 hover:to-pink-600 transition-all text-white font-bold h-[41px] rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-transparent shadow-lg"
-            >
-              Submit
-            </button>
-          </motion.form>
+              <button
+                type="submit"
+                className="bg-gradient-to-r from-purple-500 to-pink-500 mt-2 active:scale-95 hover:from-purple-600 hover:to-pink-600 transition-all text-white font-bold h-[41px] rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-transparent shadow-lg"
+              >
+                Submit
+              </button>
+            </motion.form>
 
-          <p className="mt-7 text-white/80 text-center">
-            For any inquiries, please use the form above to get in touch with
-            us.
-          </p>
+            <p className="mt-7 text-white/80 text-center">
+              For any inquiries, please use the form above to get in touch with
+              us.
+            </p>
           </div>
         </div>
       </motion.section>

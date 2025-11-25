@@ -37,8 +37,9 @@ const Benefits = () => {
             </h3>
             <p className="mt-5 text-justify md:max-w-[60%] md:text-center">
               We believe your thoughts, emotions, and everyday moments deserve
-              more than a scroll and a like. LoA is your private space to make
-              sense of your life — not for followers, but for your future self
+              more than a scroll and a like. TaskGate is your private space to
+              make sense of your life — not for followers, but for your future
+              self
             </p>
           </article>
         </div>

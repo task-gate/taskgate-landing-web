@@ -19,7 +19,7 @@ const values = [
   {
     id: 1,
     title: "Conscious Digital Living",
-    desc: "We believe technology should serve your highest good, not scatter your energy. LoA creates intentional pauses that help you align your digital interactions with your manifestation practice and conscious awareness.",
+    desc: "We believe technology should serve your highest good, not scatter your energy. TaskGate creates intentional pauses that help you align your digital interactions with your manifestation practice and conscious awareness.",
     icon: <RiSecurePaymentFill className="w-8 h-8 text-[#505050]" />,
   },
   {
@@ -31,7 +31,7 @@ const values = [
   {
     id: 3,
     title: "Privacy-First Approach",
-    desc: "Your manifestation journey and personal affirmations are yours alone. LoA keeps all data on your device, ensuring your path toward conscious digital living remains completely private and secure.",
+    desc: "Your manifestation journey and personal affirmations are yours alone. TaskGate keeps all data on your device, ensuring your path toward conscious digital living remains completely private and secure.",
     icon: <TbClockRecord className="w-8 h-8 text-[#505050]" />,
   },
 ];
@@ -66,7 +66,7 @@ export default function About() {
               className="my-4 mb-6 text-white w-[80%] md:w-[60%] md:leading-8 text-center"
             >
               We believe technology should serve your highest good, not scatter
-              your energy. LoA helps you create conscious moments between
+              your energy. TaskGate helps you create conscious moments between
               impulse and action, transforming digital distractions into
               opportunities for manifestation and alignment.
             </motion.p>
@@ -96,7 +96,7 @@ export default function About() {
                 📱 Conscious Digital Alignment
               </h3>
               <p>
-                No judgment, just awareness. LoA tracks your digital energy
+                No judgment, just awareness. TaskGate tracks your digital energy
                 patterns and creates gentle interruptions that help you pause
                 and align with your manifestation goals before diving into
                 potentially energy-draining applications.
@@ -117,9 +117,10 @@ export default function About() {
               <h3 className="text-xl font-bold">📊 Insights Without Shame</h3>
               <p>
                 Knowledge is power, but only when it&apos;s used with
-                compassion. LoA provides clear insights into your digital energy
-                patterns without judgment, helping you make conscious decisions
-                about your digital alignment and manifestation practice.
+                compassion. TaskGate provides clear insights into your digital
+                energy patterns without judgment, helping you make conscious
+                decisions about your digital alignment and manifestation
+                practice.
               </p>
               <p className="mt-2 font-semibold">
                 Because awareness is the first step toward conscious
@@ -127,8 +128,6 @@ export default function About() {
               </p>
             </div>
           </div>
-
-        
 
           <article className="grid grid-cols-1 items-center justify-center lg:grid-cols-3 gap-4 mt-10 lg:pb-0 px-6 pb-10 lg:rounded-2xl text-black lg:shadow-xl lg:w-full">
             {values.map((hook) => (

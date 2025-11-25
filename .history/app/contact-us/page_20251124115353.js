@@ -129,107 +129,109 @@ const Contact = () => {
           >
             {/* Personal Info */}
             <div className="space-y-4">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-bold mb-2 text-white"
-                  >
-                    Name:
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    value={formik.values.name}
-                    className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full h-[41px] py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
-                    placeholder="Name"
-                  />
-                  {formik.touched.name && formik.errors.name ? (
-                    <div className="text-red-400 text-sm mt-1">
-                      {formik.errors.name}
-                    </div>
-                  ) : null}
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label
-                      htmlFor="email"
-                      className="block text-sm font-bold mb-2 text-white"
-                    >
-                      Email:
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      onChange={formik.handleChange}
-                      onBlur={formik.handleBlur}
-                      value={formik.values.email}
-                      className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full h-[41px] py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
-                      placeholder="Email"
-                    />
-                    {formik.touched.email && formik.errors.email ? (
-                      <div className="text-red-400 text-sm mt-1">
-                        {formik.errors.email}
-                      </div>
-                    ) : null}
-                  </div>
-
-                  <div>
-                    <label
-                      htmlFor="phone"
-                      className="block text-sm font-bold mb-2 text-white"
-                    >
-                      Phone Number:
-                    </label>
-                    <PhoneInput
-                      placeholder="Enter phone number"
-                      value={formik.values.phone}
-                      onChange={(phone) => formik.setFieldValue("phone", phone)}
-                      onBlur={() => formik.setFieldTouched("phone", true)}
-                      defaultCountry="us"
-                      name="phone"
-                      international
-                    />
-                    {formik.touched.phone && formik.errors.phone ? (
-                      <div className="text-red-400 text-sm mt-1">
-                        {formik.errors.phone}
-                      </div>
-                    ) : null}
-                  </div>
-                </div>
-              </div>
-
-            {/* Message */}
-            <div className="space-y-2">
+              <div>
                 <label
-                  htmlFor="comment"
+                  htmlFor="name"
                   className="block text-sm font-bold mb-2 text-white"
                 >
-                  Comment:
+                  Name:
                 </label>
-                <textarea
-                  name="comment"
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  value={formik.values.comment}
-                  rows="4"
-                  className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
-                  placeholder="Additional details here"
+                  value={formik.values.name}
+                  className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full h-[41px] py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+                  placeholder="Name"
                 />
-                {formik.touched.comment && formik.errors.comment ? (
+                {formik.touched.name && formik.errors.name ? (
                   <div className="text-red-400 text-sm mt-1">
-                    {formik.errors.comment}
+                    {formik.errors.name}
                   </div>
                 ) : null}
               </div>
 
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-bold mb-2 text-white"
+                  >
+                    Email:
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}
+                    className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full h-[41px] py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+                    placeholder="Email"
+                  />
+                  {formik.touched.email && formik.errors.email ? (
+                    <div className="text-red-400 text-sm mt-1">
+                      {formik.errors.email}
+                    </div>
+                  ) : null}
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-bold mb-2 text-white"
+                  >
+                    Phone Number:
+                  </label>
+                  <PhoneInput
+                    placeholder="Enter phone number"
+                    value={formik.values.phone}
+                    onChange={(phone) => formik.setFieldValue("phone", phone)}
+                    onBlur={() => formik.setFieldTouched("phone", true)}
+                    defaultCountry="us"
+                    name="phone"
+                    international
+                  />
+                  {formik.touched.phone && formik.errors.phone ? (
+                    <div className="text-red-400 text-sm mt-1">
+                      {formik.errors.phone}
+                    </div>
+                  ) : null}
+                </div>
+              </div>
+            </div>
+
+            {/* Message */}
+            <div className="space-y-2">
+              <label
+                htmlFor="comment"
+                className="block text-sm font-bold mb-2 text-white"
+              >
+                Comment:
+              </label>
+              <textarea
+                name="comment"
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                value={formik.values.comment}
+                rows="4"
+                className="bg-white/20 backdrop-blur-sm border border-white/30 rounded-lg w-full py-2 px-3 text-white placeholder-white/50 leading-tight focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent"
+                placeholder="Additional details here"
+              />
+              {formik.touched.comment && formik.errors.comment ? (
+                <div className="text-red-400 text-sm mt-1">
+                  {formik.errors.comment}
+                </div>
+              ) : null}
+            </div>
+
             {/* Area of Concern Card */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl">
-              <h3 className="text-lg font-semibold text-white mb-4">Area of Concern</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Area of Concern
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <label className="inline-flex items-center cursor-pointer hover:bg-white/5 p-2 rounded-lg transition-colors">
                   <input
@@ -240,7 +242,7 @@ const Contact = () => {
                     onBlur={formik.handleBlur}
                     checked={formik.values.areaOfInterest.loaUsage}
                   />
-                  <span className="ml-2 text-white">LoA Usage</span>
+                  <span className="ml-2 text-white">TaskGate Usage</span>
                 </label>
                 <label className="inline-flex items-center cursor-pointer hover:bg-white/5 p-2 rounded-lg transition-colors">
                   <input
@@ -292,7 +294,8 @@ const Contact = () => {
           {/* Footer Card */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl">
             <p className="text-white/80 text-center">
-              For any inquiries, please use the form above to get in touch with us.
+              For any inquiries, please use the form above to get in touch with
+              us.
             </p>
           </div>
         </div>

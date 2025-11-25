@@ -129,7 +129,9 @@ const Contact = () => {
           >
             {/* Personal Info Card */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl">
-              <h3 className="text-lg font-semibold text-white mb-4">Personal Information</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Personal Information
+              </h3>
               <div className="space-y-4">
                 <div>
                   <label
@@ -208,7 +210,9 @@ const Contact = () => {
 
             {/* Message Card */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl">
-              <h3 className="text-lg font-semibold text-white mb-4">Your Message</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Your Message
+              </h3>
               <div>
                 <label
                   htmlFor="comment"
@@ -235,7 +239,9 @@ const Contact = () => {
 
             {/* Area of Concern Card */}
             <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl">
-              <h3 className="text-lg font-semibold text-white mb-4">Area of Concern</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">
+                Area of Concern
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <label className="inline-flex items-center cursor-pointer hover:bg-white/5 p-2 rounded-lg transition-colors">
                   <input
@@ -246,7 +252,7 @@ const Contact = () => {
                     onBlur={formik.handleBlur}
                     checked={formik.values.areaOfInterest.loaUsage}
                   />
-                  <span className="ml-2 text-white">LoA Usage</span>
+                  <span className="ml-2 text-white">TaskGate Usage</span>
                 </label>
                 <label className="inline-flex items-center cursor-pointer hover:bg-white/5 p-2 rounded-lg transition-colors">
                   <input
@@ -296,7 +302,8 @@ const Contact = () => {
           {/* Footer Card */}
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl">
             <p className="text-white/80 text-center">
-              For any inquiries, please use the form above to get in touch with us.
+              For any inquiries, please use the form above to get in touch with
+              us.
             </p>
           </div>
         </div>

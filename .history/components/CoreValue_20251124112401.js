@@ -5,7 +5,7 @@ const values = [
   {
     id: "01",
     title: "Consciousness Over Convenience",
-    desc: `Every digital interaction should serve your highest good, not scatter your energy. LoA creates intentional pauses that help you choose awareness over autopilot, transforming mindless habits into moments of conscious choice.<br /><span class="italic text-black/60">💡 Your attention is your most valuable resource — invest it wisely.</span>`,
+    desc: `Every digital interaction should serve your highest good, not scatter your energy. TaskGate creates intentional pauses that help you choose awareness over autopilot, transforming mindless habits into moments of conscious choice.<br /><span class="italic text-black/60">💡 Your attention is your most valuable resource — invest it wisely.</span>`,
   },
   {
     id: "02",
@@ -15,12 +15,12 @@ const values = [
   {
     id: "03",
     title: "Small Shifts Create Big Transformations",
-    desc: `You don't need to overhaul your entire life overnight. With each mindful pause and conscious affirmation, LoA helps you gradually realign your energy with your desires — building powerful momentum one moment at a time.<br /><span class="italic text-black/60">💡 Consistency in small practices creates quantum leaps in manifestation.</span>`,
+    desc: `You don't need to overhaul your entire life overnight. With each mindful pause and conscious affirmation, TaskGate helps you gradually realign your energy with your desires — building powerful momentum one moment at a time.<br /><span class="italic text-black/60">💡 Consistency in small practices creates quantum leaps in manifestation.</span>`,
   },
   {
     id: "04",
     title: "Technology Should Support Your Spirit",
-    desc: `Instead of technology draining your energy, it should amplify your spiritual practice. LoA transforms your phone from a distraction device into a manifestation tool that supports your conscious living journey.<br /><span class="italic text-black/60">💡 When technology serves consciousness, magic happens.</span>`,
+    desc: `Instead of technology draining your energy, it should amplify your spiritual practice. TaskGate transforms your phone from a distraction device into a manifestation tool that supports your conscious living journey.<br /><span class="italic text-black/60">💡 When technology serves consciousness, magic happens.</span>`,
   },
   {
     id: "05",
@@ -39,11 +39,11 @@ const CoreValues = () => {
       <article className="container mx-auto py-14 p-4 px-5 md:px-[5%] 2xl:px-0 max-w-[1200px] flex flex-col items-center justify-center gap-10">
         <div className="flex flex-col items-center justify-center text-center">
           <h2 className="text-h2 lg:text-h3 font-bold max-w-[80%]">
-            LoA – Our Core Values
+            TaskGate – Our Core Values
           </h2>
           <span className="w-16 h-1 mt-3 bg-bg" />
           <p className="mt-5 text-justify md:max-w-[60%] md:text-center">
-            At <strong>LoA</strong>, we believe your digital habits should
+            At <strong>TaskGate</strong>, we believe your digital habits should
             elevate your consciousness — not scatter your energy. Our values
             reflect our commitment to helping you{" "}
             <strong>

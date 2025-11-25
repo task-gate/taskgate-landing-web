@@ -242,7 +242,7 @@ const Contact = () => {
                     onBlur={formik.handleBlur}
                     checked={formik.values.areaOfInterest.loaUsage}
                   />
-                  <span className="ml-2 text-white">LoA Usage</span>
+                  <span className="ml-2 text-white">TaskGate Usage</span>
                 </label>
                 <label className="inline-flex items-center cursor-pointer hover:bg-white/5 p-2 rounded-lg transition-colors">
                   <input
@@ -281,13 +281,12 @@ const Contact = () => {
             </div>
 
             {/* Submit Button */}
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-purple-500 to-pink-500 active:scale-95 hover:from-purple-600 hover:to-pink-600 transition-all text-white font-bold h-[48px] rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-transparent shadow-lg"
-              >
-                Submit
-              </button>
-
+            <button
+              type="submit"
+              className="w-full bg-gradient-to-r from-purple-500 to-pink-500 active:scale-95 hover:from-purple-600 hover:to-pink-600 transition-all text-white font-bold h-[48px] rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-transparent shadow-lg"
+            >
+              Submit
+            </button>
           </motion.form>
         </div>
       </motion.section>

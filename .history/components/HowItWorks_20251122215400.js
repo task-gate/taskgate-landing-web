@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const steps = [
   "Set your manifestation intentions and create personalized affirmations that align with your highest self.",
   "Choose which apps to monitor - social media, games, or any app that tends to distract from your goals.",
-  "When you tap a monitored app, LoA pauses your impulse with a beautiful affirmation screen.",
+  "When you tap a monitored app, TaskGate pauses your impulse with a beautiful affirmation screen.",
   "Take a conscious breath, read your affirmation, and decide: does this align with what I want to attract?",
   "Build awareness of your digital energy patterns and celebrate your journey toward conscious living.",
 ];
@@ -21,7 +21,7 @@ const HowItWorks = () => {
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 shadow-2xl w-full">
           <div className="flex flex-col items-center lg:items-start justify-center">
             <h2 className="text-h2 lg:text-h3 font-bold text-center bg-gradient-to-r from-indigo-900 to-purple-900 bg-clip-text text-transparent">
-              How LoA Transforms Your Digital Life
+              How TaskGate Transforms Your Digital Life
             </h2>
             <span className="w-16 h-1 mt-3 bg-gradient-to-r from-purple-600 to-indigo-600" />
           </div>
@@ -58,10 +58,10 @@ const HowItWorks = () => {
                 viewport={{ once: true }}
                 className="text-p lg:text-lg mt-5 text-gray-600"
               >
-                LoA applies the Law of Attraction to your digital habits. By
-                pausing before distractions with personalized affirmations, you
-                redirect your energy toward what you truly want to attract into
-                your life, creating micro-moments of conscious awareness
+                TaskGate applies the Law of Attraction to your digital habits.
+                By pausing before distractions with personalized affirmations,
+                you redirect your energy toward what you truly want to attract
+                into your life, creating micro-moments of conscious awareness
                 throughout your day.
               </motion.p>
             </div>
@@ -78,7 +78,7 @@ const HowItWorks = () => {
               className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 shadow-2xl"
             >
               <h4 className="text-lg font-semibold mb-4 bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
-                The LoA Process:
+                The TaskGate Process:
               </h4>
               <ul className="space-y-3">
                 {steps.map((step, index) => (
@@ -118,13 +118,13 @@ const HowItWorks = () => {
             <div className="relative w-full max-w-md">
               {/* Animated border glow */}
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 via-pink-500 to-indigo-600 rounded-3xl blur-xl opacity-75 animate-pulse"></div>
-              
+
               {/* Main card */}
               <div className="relative bg-gradient-to-br from-gray-900/90 to-black/90 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl">
                 {/* Holographic accent lines */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-50"></div>
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-pink-500 to-transparent opacity-50"></div>
-                
+
                 {/* Header section */}
                 <div className="relative bg-gradient-to-br from-purple-500/20 to-indigo-600/20 backdrop-blur-sm border border-purple-400/30 rounded-2xl p-6 mb-6">
                   {/* Floating orb */}
@@ -134,14 +134,15 @@ const HowItWorks = () => {
                       <span className="text-3xl">✨</span>
                     </div>
                   </div>
-                  
+
                   <h4 className="font-bold text-xl mb-3 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 via-pink-300 to-indigo-300 text-center">
                     Manifestation Moment
                   </h4>
                   <p className="text-gray-300 text-sm text-center leading-relaxed">
-                    &quot;I attract opportunities that align with my highest good&quot;
+                    &quot;I attract opportunities that align with my highest
+                    good&quot;
                   </p>
-                  
+
                   {/* Energy meter */}
                   <div className="mt-4 space-y-2">
                     <div className="flex justify-between text-xs text-gray-400">
@@ -162,21 +163,25 @@ const HowItWorks = () => {
                         <div className="w-10 h-10 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg flex items-center justify-center border border-purple-400/30">
                           <span className="text-lg">📱</span>
                         </div>
-                        <span className="text-white text-sm font-medium">Social Media</span>
+                        <span className="text-white text-sm font-medium">
+                          Social Media
+                        </span>
                       </div>
                       <span className="px-3 py-1 bg-purple-500/20 border border-purple-400/50 rounded-full text-purple-300 text-xs font-medium">
                         Redirected
                       </span>
                     </div>
                   </div>
-                  
+
                   <div className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-4 hover:bg-white/10 hover:border-green-400/50 transition-all duration-300">
                     <div className="flex justify-between items-center">
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 bg-gradient-to-br from-green-500/20 to-emerald-500/20 rounded-lg flex items-center justify-center border border-green-400/30">
                           <span className="text-lg">🎮</span>
                         </div>
-                        <span className="text-white text-sm font-medium">Games</span>
+                        <span className="text-white text-sm font-medium">
+                          Games
+                        </span>
                       </div>
                       <span className="px-3 py-1 bg-green-500/20 border border-green-400/50 rounded-full text-green-300 text-xs font-medium">
                         Mindful

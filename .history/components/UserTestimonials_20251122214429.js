@@ -8,7 +8,7 @@ const testimonials = [
     role: "Manifestation Coach",
     avatar: "/avatars/sarah.jpg",
     rating: 5,
-    text: "LoA has revolutionized how I practice the Law of Attraction daily. Every time I reach for my phone, I'm reminded of my intentions. I've manifested two major goals since starting - it's like having a spiritual guide in my pocket!",
+    text: "TaskGate has revolutionized how I practice the Law of Attraction daily. Every time I reach for my phone, I'm reminded of my intentions. I've manifested two major goals since starting - it's like having a spiritual guide in my pocket!",
   },
   {
     name: "Marcus Rodriguez",
@@ -22,28 +22,28 @@ const testimonials = [
     role: "Spiritual Entrepreneur",
     avatar: "/avatars/emma.jpg",
     rating: 5,
-    text: "LoA transformed my relationship with my phone from mindless scrolling to conscious manifestation practice. I've set affirmations for abundance and love, and I'm seeing real shifts in my reality. This is manifestation made practical!",
+    text: "TaskGate transformed my relationship with my phone from mindless scrolling to conscious manifestation practice. I've set affirmations for abundance and love, and I'm seeing real shifts in my reality. This is manifestation made practical!",
   },
   {
     name: "David Park",
     role: "Mindfulness Teacher",
     avatar: "/avatars/david.jpg",
     rating: 5,
-    text: "What I love about LoA is how it makes the Law of Attraction accessible in our digital world. Those micro-moments of consciousness throughout the day are building into major life transformations. Highly recommend!",
+    text: "What I love about TaskGate is how it makes the Law of Attraction accessible in our digital world. Those micro-moments of consciousness throughout the day are building into major life transformations. Highly recommend!",
   },
   {
     name: "Lisa Johnson",
     role: "Energy Healer",
     avatar: "/avatars/lisa.jpg",
     rating: 5,
-    text: "LoA helps me maintain high vibration even when using technology. The affirmations keep me centered and focused on what I want to attract. I've noticed my clients are drawn to higher energy since I started using this app.",
+    text: "TaskGate helps me maintain high vibration even when using technology. The affirmations keep me centered and focused on what I want to attract. I've noticed my clients are drawn to higher energy since I started using this app.",
   },
   {
     name: "Alex Kumar",
     role: "Meditation Instructor",
     avatar: "/avatars/alex.jpg",
     rating: 5,
-    text: "I teach all my students about conscious living, and LoA is the perfect tool for practicing awareness in daily life. It's amazing how these small moments of intention can shift your entire energetic frequency.",
+    text: "I teach all my students about conscious living, and TaskGate is the perfect tool for practicing awareness in daily life. It's amazing how these small moments of intention can shift your entire energetic frequency.",
   },
 ];
 
@@ -74,7 +74,7 @@ const UserTestimonials = () => {
             viewport={{ once: true }}
             className="text-lg text-gray-600 max-w-2xl mx-auto"
           >
-            Join thousands of manifestors who are using LoA to align their
+            Join thousands of manifestors who are using TaskGate to align their
             digital habits with their highest intentions and attract more of
             what they truly desire.
           </motion.p>

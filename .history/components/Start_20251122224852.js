@@ -15,7 +15,7 @@ const Start = () => {
         <div className="flex flex-col gap-12 items-center md:items-start justify-center">
           <h2 className="text-h3 lg:text-h4 font-bold text-center md:text-left max-w-[80%] leading-relaxed">
             Transform Your Digital Life Today. <br />
-            Your Conscious Journey Begins with LoA
+            Your Conscious Journey Begins with TaskGate
           </h2>
           <div className="mt-8 flex space-x-4">
             <div className="flex flex-col md:flex-row gap-4">

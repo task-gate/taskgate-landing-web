@@ -75,7 +75,7 @@ export default function Home() {
               <div className="absolute inset-0 blur-3xl opacity-30">
                 <div className="absolute top-0 left-1/4 w-1/2 h-full bg-gradient-to-r from-purple-600 to-pink-600"></div>
               </div>
-              
+
               <h1 className="relative text-5xl md:text-7xl lg:text-8xl font-bold mb-4 leading-tight">
                 <span className="block text-white mb-2">Attract What You</span>
                 <span className="relative inline-block">
@@ -101,16 +101,18 @@ export default function Home() {
               <div className="absolute -top-3 -right-3 w-12 h-12 border-t-2 border-r-2 border-pink-400/40 rounded-tr-xl"></div>
               <div className="absolute -bottom-3 -left-3 w-12 h-12 border-b-2 border-l-2 border-indigo-400/40 rounded-bl-xl"></div>
               <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-purple-400/40 rounded-br-xl"></div>
-              
+
               <div className="relative bg-white/5 backdrop-blur-lg border border-white/20 rounded-2xl p-8 shadow-2xl">
                 <p className="text-lg md:text-xl text-white/90 leading-relaxed font-medium">
                   Transform every phone interaction into a moment of{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-300 font-bold">
                     conscious awareness
                   </span>
-                  . LoA interrupts digital distractions with personalized affirmations, helping you align your energy with your highest intentions.
+                  . TaskGate interrupts digital distractions with personalized
+                  affirmations, helping you align your energy with your highest
+                  intentions.
                 </p>
-                
+
                 {/* Energy indicator */}
                 <div className="mt-6 flex items-center justify-center gap-2">
                   <div className="flex gap-1">
@@ -122,7 +124,9 @@ export default function Home() {
                       ></div>
                     ))}
                   </div>
-                  <span className="text-purple-300 text-xs font-semibold tracking-wider">VIBRATIONAL FREQUENCY</span>
+                  <span className="text-purple-300 text-xs font-semibold tracking-wider">
+                    VIBRATIONAL FREQUENCY
+                  </span>
                 </div>
               </div>
             </motion.div>
@@ -223,7 +227,7 @@ export default function Home() {
             The Law of Attraction teaches us that our thoughts, emotions, and
             focus shape our reality. When you align your energy with gratitude,
             clarity, and abundance, you naturally attract experiences that
-            reflect those states. LoA brings this ancient wisdom into your
+            reflect those states. TaskGate brings this ancient wisdom into your
             digital life.
           </motion.p>
 

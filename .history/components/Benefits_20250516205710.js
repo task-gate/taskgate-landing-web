@@ -68,9 +68,10 @@ const Benefits = () => {
               !
             </h3>
             <p className="mt-5 text-justify md:max-w-[60%] md:text-center">
-              LoA isn’t just about capturing memories — it’s about making sense
-              of them. With AI guidance, emotional awareness, and a beautifully
-              organized timeline, your life story unfolds as you live it.
+              TaskGate isn’t just about capturing memories — it’s about making
+              sense of them. With AI guidance, emotional awareness, and a
+              beautifully organized timeline, your life story unfolds as you
+              live it.
             </p>
           </article>
         </div>

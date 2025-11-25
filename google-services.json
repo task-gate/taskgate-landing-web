@@ -1,43 +1,26 @@
 {
   "project_info": {
-    "project_number": "437280973763",
-    "project_id": "loa-dev-7447a",
-    "storage_bucket": "loa-dev-7447a.firebasestorage.app"
+    "project_number": "939503478840",
+    "project_id": "taskgate-dev",
+    "storage_bucket": "taskgate-dev.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:437280973763:android:0aba6349d71851aced5376",
+        "mobilesdk_app_id": "1:939503478840:android:222cb27339f1f3dd11decd",
         "android_client_info": {
-          "package_name": "com.loa.lawofattraction.dev"
+          "package_name": "com.tkg.taskgate.dev"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "437280973763-eamrfdofoo42v4599lvgm7c77hcgcdov.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAtDbKDgeR8Oackw6ILboQkddnpXJBpZ7E"
+          "current_key": "AIzaSyB3zDB20QjCnXoipZ3lANuV5mzb2MRVzKk"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "437280973763-eamrfdofoo42v4599lvgm7c77hcgcdov.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "437280973763-hnr8pfea54tf36j0h5q69uq5l3ck9mmk.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.loa.lawofattraction.dev"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }
