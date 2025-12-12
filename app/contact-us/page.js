@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { motion } from "framer-motion";
 import { useFormik } from "formik";
 import Image from "next/image";
@@ -13,11 +13,11 @@ import { db } from "@/utils/firebase";
 import { addDoc, collection } from "firebase/firestore";
 import { useSearchParams } from "next/navigation";
 
-const Contact = () => {
+const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [showTray, setShowTray] = useState(false);
   const searchParams = useSearchParams();
-  const interest = searchParams.get("interest");
+  const interest = searchParams?.get("interest") || null;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -376,6 +376,23 @@ const Contact = () => {
         </motion.section>
       )}
     </>
+  );
+};
+
+const Contact = () => {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex w-full items-center justify-center bg-transparent">
+        <InfinitySpin
+          visible
+          width="200"
+          color="#505050"
+          ariaLabel="infinity-spin-loading"
+        />
+      </div>
+    }>
+      <ContactForm />
+    </Suspense>
   );
 };
 
