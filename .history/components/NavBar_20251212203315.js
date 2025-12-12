@@ -65,7 +65,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/partnership" className={isActive("/partnership")}>
+            <Link href="/contact-us?interest=partnership" className={isActive("/contact-us")}>
               Partnership
             </Link>
           </li>
@@ -155,8 +155,8 @@ const Navbar = () => {
           </li>
           <li className="text-3xl">
             <Link
-              href="/partnership"
-              className={isActive("/partnership")}
+              href="/contact-us?interest=partnership"
+              className={isActive("/contact-us")}
               onClick={toggleMenu}
             >
               Partnership

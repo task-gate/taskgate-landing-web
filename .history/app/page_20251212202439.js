@@ -4,7 +4,7 @@ import "./globals.css";
 import { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Target, Eye, Heart, Zap } from "lucide-react";
+import { Sparkles, Eye, Heart, Zap } from "lucide-react";
 import AppStoreDownloadButton from "@/components/AppStoreDownloadButton";
 import GooglePlayDownloadButton from "@/components/GooglePlayDownloadButton";
 import HowItWorks from "@/components/HowItWorks";
@@ -21,13 +21,21 @@ export default function Home() {
 
   return (
     <>
-      {/* Hero Section */}
+      {/* Hero Section with sliding cube background */}
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         className="relative min-h-screen bg-black pt-20 overflow-hidden"
       >
+        {/* Floating elements */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none z-5">
+          <div className="absolute top-20 left-10 w-2 h-2 bg-white rounded-full animate-pulse"></div>
+          <div className="absolute top-40 right-20 w-1 h-1 bg-purple-300 rounded-full animate-ping"></div>
+          <div className="absolute bottom-40 left-20 w-3 h-3 bg-indigo-300 rounded-full animate-pulse"></div>
+          <div className="absolute top-60 left-1/2 w-1 h-1 bg-white rounded-full animate-ping"></div>
+        </div>
+
         <div className="relative z-20 max-w-6xl mx-auto px-4 py-20">
           <div className="text-center mb-16">
             {/* Badge */}
@@ -37,9 +45,9 @@ export default function Home() {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg"
             >
-              <Target className="w-4 h-4 text-white" />
+              <Sparkles className="w-4 h-4 text-white" />
               <span className="text-white font-medium text-sm">
-                Build Better Habits, One Task at a Time
+                Mindful App Usage, One Task at a Time
               </span>
             </motion.div>
 
@@ -51,9 +59,11 @@ export default function Home() {
               className="relative mb-8"
             >
               <h1 className="relative text-5xl md:text-7xl lg:text-8xl font-bold mb-4 leading-tight">
-                <span className="block mb-2 text-white">A Small Task.</span>
+                <span className="block mb-2 text-white">
+                  Break the Cycle of
+                </span>
                 <span className="relative inline-block text-accent">
-                  A Better Habit
+                  Impulsive Scrolling
                 </span>
               </h1>
             </motion.div>

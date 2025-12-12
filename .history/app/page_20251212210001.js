@@ -4,7 +4,7 @@ import "./globals.css";
 import { useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Target, Eye, Heart, Zap } from "lucide-react";
+import { Sparkles, Eye, Heart, Zap } from "lucide-react";
 import AppStoreDownloadButton from "@/components/AppStoreDownloadButton";
 import GooglePlayDownloadButton from "@/components/GooglePlayDownloadButton";
 import HowItWorks from "@/components/HowItWorks";
@@ -37,7 +37,7 @@ export default function Home() {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="inline-flex items-center gap-2 mb-8 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-lg"
             >
-              <Target className="w-4 h-4 text-white" />
+              <Sparkles className="w-4 h-4 text-white" />
               <span className="text-white font-medium text-sm">
                 Build Better Habits, One Task at a Time
               </span>
