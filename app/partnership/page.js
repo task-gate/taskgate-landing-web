@@ -372,7 +372,7 @@ export default function Partnership() {
               How Partnership Works
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              Simple integration, powerful results. Here's how our partnership
+              Simple integration, powerful results. Here&apos;s how our partnership
               model works.
             </p>
           </motion.div>
@@ -424,7 +424,7 @@ export default function Partnership() {
               Ideal Partner Categories
             </h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-              We're looking for apps that help users learn, grow, and improve
+              We&apos;re looking for apps that help users learn, grow, and improve
               their well-being.
             </p>
           </motion.div>
@@ -469,7 +469,7 @@ export default function Partnership() {
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
               Join our growing ecosystem of apps helping users build better
-              digital habits. Let's create something amazing together.
+              digital habits. Let&apos;s create something amazing together.
             </p>
             <Link href="/contact-us?interest=partnership">
               <button className="px-10 py-4 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-all duration-300 shadow-lg hover:shadow-xl text-lg flex items-center gap-2 mx-auto">
