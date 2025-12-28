@@ -376,10 +376,20 @@ export default function Partnership() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               How Partnership Works
             </h2>
-            <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-12">
               Simple integration, powerful results. Here&apos;s how our
               partnership model works.
             </p>
+            <div className="flex justify-center mb-12">
+              <video
+                src="/mock/demo.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="max-w-[200px] lg:max-w-xs h-auto drop-shadow-lg rounded-3xl"
+              />
+            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

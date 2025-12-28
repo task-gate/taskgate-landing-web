@@ -61,15 +61,18 @@ const HowItWorks = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="flex justify-center lg:justify-end"
+            className="flex justify-center lg:justify-center"
           >
-            <div className="relative">
-              {/* Phone image */}
+            <div className="relative mr-8 lg:mr-16">
+              {/* Phone video */}
               <div className="relative">
-                <img
-                  src="/mock/mock1.png"
-                  alt="TaskGate App Interface"
-                  className="w-full max-w-sm lg:max-w-md h-auto drop-shadow-lg"
+                <video
+                  src="/mock/demo.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full max-w-[200px] lg:max-w-xs h-auto drop-shadow-lg rounded-3xl"
                 />
               </div>
             </div>
