@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -40,7 +40,7 @@ const generateProviderId = (appName) => {
   return `${sanitized}_${uuid}`;
 };
 
-export default function PartnerPortal() {
+function PartnerPortalContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { user, partnerData, loading, isAuthenticated, providerId } =
@@ -543,5 +543,23 @@ export default function PartnerPortal() {
         </motion.div>
       </motion.div>
     </div>
+  );
+}
+
+// Loading fallback for Suspense
+function PartnerPortalLoading() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-gray-900 via-gray-900 to-black">
+      <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-purple-500"></div>
+    </div>
+  );
+}
+
+// Main export with Suspense boundary
+export default function PartnerPortal() {
+  return (
+    <Suspense fallback={<PartnerPortalLoading />}>
+      <PartnerPortalContent />
+    </Suspense>
   );
 }
