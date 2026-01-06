@@ -1,5 +1,7 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -10,10 +12,12 @@ const firebaseConfig = {
 };
 
 let firebaseApp;
-if (typeof window !== 'undefined' && !firebaseApp) {
+if (typeof window !== "undefined" && !firebaseApp) {
   firebaseApp = initializeApp(firebaseConfig);
 }
 
 const db = firebaseApp ? getFirestore(firebaseApp) : null;
+const storage = firebaseApp ? getStorage(firebaseApp) : null;
+const auth = firebaseApp ? getAuth(firebaseApp) : null;
 
-export { db, firebaseApp };
+export { db, firebaseApp, storage, auth };

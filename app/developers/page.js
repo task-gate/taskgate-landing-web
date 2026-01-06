@@ -109,33 +109,45 @@ const getSdkIcon = (iconType) => {
 const integrationSteps = [
   {
     step: "01",
-    title: "Request Your Provider ID",
+    title: "Register & Create Your Provider ID",
     description:
-      "Contact us to register as a partner app and receive your unique providerId. This ID identifies your app in the TaskGate ecosystem.",
+      "Sign up on our Partner Portal to create your account and get your unique providerId instantly. No waiting for approval to start development.",
   },
   {
     step: "02",
+    title: "Get TaskGate Dev Build",
+    description:
+      "Request access to the TaskGate development build via the Partner Portal. You'll receive an invite to test your integration with the dev version of TaskGate.",
+  },
+  {
+    step: "03",
+    title: "Configure Your Integration",
+    description:
+      "Use the Partner Config Editor to set up your app details, icons, and define your mini-tasks. Changes auto-save so you can iterate quickly.",
+  },
+  {
+    step: "04",
     title: "Install the SDK",
     description:
       "Add our SDK to your project using your preferred package manager. Available for Flutter, iOS, and Android.",
   },
   {
-    step: "03",
-    title: "Configure Deep Links",
-    description:
-      "Set up app links (Android) or universal links (iOS) to receive task requests from TaskGate with the task parameters.",
-  },
-  {
-    step: "04",
-    title: "Build Your Mini-Task",
-    description:
-      "Create an engaging mini-task experience in your app. This could be a quick game, quiz, breathing exercise, or any brief activity.",
-  },
-  {
     step: "05",
-    title: "Send Completion Callback",
+    title: "Set Up Deep Links",
     description:
-      "When the user completes your task, use the SDK to send a callback to TaskGate, which unlocks access to the user's original app.",
+      "Configure app links (Android) or universal links (iOS) to receive task requests from TaskGate with the task parameters.",
+  },
+  {
+    step: "06",
+    title: "Build & Test Your Mini-Task",
+    description:
+      "Create an engaging mini-task experience in your app. Test the full flow using the TaskGate dev build to ensure everything works.",
+  },
+  {
+    step: "07",
+    title: "Submit for Production",
+    description:
+      "When you're ready, submit your config for approval. Once approved, your app will be live on TaskGate for all users.",
   },
 ];
 
@@ -213,20 +225,19 @@ export default function Developers() {
           >
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                First Step: Get Your Provider ID
+                Get Started in Minutes
               </h3>
               <p className="text-gray-600 mb-4">
-                Before integrating with TaskGate, partner apps must obtain a
-                unique{" "}
+                Register on our Partner Portal to instantly create your{" "}
                 <code className="bg-gray-200 px-2 py-1 rounded text-accent font-mono text-sm">
                   providerId
                 </code>
-                . This ID identifies your app in the TaskGate ecosystem and
-                enables secure callback communication.
+                , configure your integration, and start building. Submit for
+                approval when you&apos;re ready for production.
               </p>
-              <Link href="/contact-us?interest=developer">
+              <Link href="/partner">
                 <button className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-accent to-purple-600 text-white font-semibold hover:opacity-90 transition-opacity">
-                  Request Your Provider ID
+                  Open Partner Portal
                   <ArrowRight className="w-4 h-4" />
                 </button>
               </Link>
@@ -541,26 +552,26 @@ export default function Developers() {
               Ready to Get Started?
             </h2>
             <p className="text-gray-600 text-lg mb-8 max-w-2xl mx-auto">
-              Join our developer community and start building with TaskGate
-              today. Have questions? We&apos;re here to help.
+              Create your partner account, configure your integration, and start
+              building today. No approval needed to begin development.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/partner">
+                <button className="px-8 py-4 rounded-lg bg-gradient-to-r from-accent to-purple-600 text-white font-semibold hover:opacity-90 transition-opacity flex items-center gap-2 justify-center w-full sm:w-auto">
+                  <Terminal className="w-5 h-5" />
+                  Open Partner Portal
+                </button>
+              </Link>
               <a
                 href="https://pub.dev/packages/taskgate_sdk"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <button className="px-8 py-4 rounded-lg bg-gradient-to-r from-accent to-purple-600 text-white font-semibold hover:opacity-90 transition-opacity flex items-center gap-2 justify-center w-full sm:w-auto">
+                <button className="px-8 py-4 rounded-lg bg-gray-900 text-white font-semibold hover:bg-gray-800 transition-all duration-300 flex items-center gap-2 justify-center w-full sm:w-auto">
                   <Package className="w-5 h-5" />
-                  Get Started with Flutter
+                  View Flutter SDK
                 </button>
               </a>
-              <Link href="/contact-us?interest=developer">
-                <button className="px-8 py-4 rounded-lg bg-gray-900 text-white font-semibold hover:bg-gray-800 transition-all duration-300 flex items-center gap-2 justify-center w-full sm:w-auto">
-                  Contact Developer Support
-                  <ArrowRight className="w-5 h-5" />
-                </button>
-              </Link>
             </div>
           </motion.div>
         </div>

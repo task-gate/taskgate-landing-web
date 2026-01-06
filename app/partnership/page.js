@@ -186,18 +186,25 @@ export default function Partnership() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/contact-us?interest=partnership">
+              <Link href="/partner?mode=register">
                 <button className="px-8 py-4 rounded-lg bg-gradient-to-r from-accent to-purple-600 text-white font-semibold hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl flex items-center gap-2">
                   Become a Partner
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </Link>
-              <Link href="#how-it-works">
-                <button className="px-8 py-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold hover:bg-white/20 transition-all duration-300">
-                  Learn How It Works
+              <Link href="/partner">
+                <button className="px-8 py-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold hover:bg-white/20 transition-all duration-300 flex items-center gap-2">
+                  <Shield className="w-5 h-5" />
+                  Partner Portal
                 </button>
               </Link>
             </div>
+            <p className="text-sm text-gray-500 mt-4">
+              Already a partner?{" "}
+              <Link href="/partner" className="text-accent hover:underline">
+                Access the Partner Portal
+              </Link>
+            </p>
           </motion.div>
 
           {/* Goals */}
@@ -511,12 +518,20 @@ export default function Partnership() {
               Join our growing ecosystem of apps helping users build better
               digital habits. Let&apos;s create something amazing together.
             </p>
-            <Link href="/contact-us?interest=partnership">
-              <button className="px-10 py-4 rounded-lg bg-gradient-to-r from-accent to-purple-600 text-white font-semibold hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl text-lg flex items-center gap-2 mx-auto">
-                Get Started Today
-                <ArrowRight className="w-5 h-5" />
-              </button>
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link href="/partner?mode=register">
+                <button className="px-10 py-4 rounded-lg bg-gradient-to-r from-accent to-purple-600 text-white font-semibold hover:opacity-90 transition-opacity shadow-lg hover:shadow-xl text-lg flex items-center gap-2">
+                  Get Started Today
+                  <ArrowRight className="w-5 h-5" />
+                </button>
+              </Link>
+              <Link href="/partner">
+                <button className="px-10 py-4 rounded-lg bg-white/10 backdrop-blur-md border border-white/30 text-white font-semibold hover:bg-white/20 transition-all duration-300 text-lg flex items-center gap-2">
+                  <Shield className="w-5 h-5" />
+                  Partner Portal
+                </button>
+              </Link>
+            </div>
           </motion.div>
         </div>
       </motion.section>

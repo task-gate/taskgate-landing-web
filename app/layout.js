@@ -6,6 +6,7 @@ import Navbar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
 import { Suspense } from "react";
+import { usePathname } from "next/navigation";
 
 // ✅ Load Meta Pixel only on the client (Prevents SSR issues)
 const MetaPixelNoSSR = dynamic(() => import("@/components/MetaPixelEvents"), {
@@ -13,6 +14,9 @@ const MetaPixelNoSSR = dynamic(() => import("@/components/MetaPixelEvents"), {
 });
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname();
+  const isAdminRoute = pathname?.startsWith("/admin");
+
   const pageVariants = {
     initial: { opacity: 0, x: -100 },
     animate: {
@@ -116,9 +120,11 @@ export default function RootLayout({ children }) {
           <MetaPixelNoSSR />
         </Suspense>
 
-        <header className="w-full relative z-50">
-          <Navbar />
-        </header>
+        {!isAdminRoute && (
+          <header className="w-full relative z-50">
+            <Navbar />
+          </header>
+        )}
 
         <motion.main
           className="w-full mx-auto relative z-10"
@@ -130,9 +136,11 @@ export default function RootLayout({ children }) {
           {children}
         </motion.main>
 
-        <div className="relative z-10">
-          <Footer />
-        </div>
+        {!isAdminRoute && (
+          <div className="relative z-10">
+            <Footer />
+          </div>
+        )}
       </body>
     </html>
   );
