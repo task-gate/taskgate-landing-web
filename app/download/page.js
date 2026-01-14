@@ -60,12 +60,90 @@ export default function Download() {
               Android.
             </motion.p>
 
-            {/* Features Grid */}
+            {/* QR Codes */}
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-16"
+              className="mb-16"
+            >
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-12">
+                {/* iOS QR Code */}
+                <div className="flex flex-col items-center">
+                  <div className="relative p-5 rounded-3xl bg-gradient-to-br from-accent via-purple-600 to-pink-600">
+                    <div className="relative">
+                      <Image
+                        src="/ios-qrcode.png"
+                        alt="iOS App QR Code"
+                        width={180}
+                        height={180}
+                        className="w-full h-auto rounded-2xl"
+                      />
+                      {/* Center Logo Overlay */}
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg p-2">
+                        <Image
+                          src="/app_logo_dark.png"
+                          alt="TaskGate Logo"
+                          width={40}
+                          height={40}
+                          className="w-full h-full"
+                        />
+                      </div>
+                    </div>
+                    <div className="px-5 py-4 text-center">
+                      <p className="text-white font-semibold text-lg">
+                        TaskGate
+                      </p>
+                      <p className="text-gray-200 text-sm">for iOS</p>
+                    </div>
+                    <div className="px-5 pb-2 pt-2 flex justify-center">
+                      <AppStoreDownloadButton />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Android QR Code */}
+                <div className="flex flex-col items-center">
+                  <div className="relative p-5 rounded-3xl bg-gradient-to-br from-green-500 via-green-600 to-emerald-600">
+                    <div className="relative">
+                      <Image
+                        src="/android-qrcode.png"
+                        alt="Android App QR Code"
+                        width={180}
+                        height={180}
+                        className="w-full h-auto rounded-2xl"
+                      />
+                      {/* Center Logo Overlay */}
+                      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg p-2">
+                        <Image
+                          src="/app_logo_dark.png"
+                          alt="TaskGate Logo"
+                          width={40}
+                          height={40}
+                          className="w-full h-full"
+                        />
+                      </div>
+                    </div>
+                    <div className="px-5 py-4 text-center">
+                      <p className="text-white font-semibold text-lg">
+                        TaskGate
+                      </p>
+                      <p className="text-gray-200 text-sm">for Android</p>
+                    </div>
+                    <div className="px-5 pb-2 pt-2 flex justify-center">
+                      <GooglePlayDownloadButton />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Features Grid */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto"
             >
               {features.map((feature, index) => (
                 <div
@@ -77,34 +155,7 @@ export default function Download() {
                 </div>
               ))}
             </motion.div>
-
-            {/* Download Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.8 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
-            >
-              <AppStoreDownloadButton />
-              <GooglePlayDownloadButton />
-            </motion.div>
           </div>
-
-          {/* App Screenshot */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 1 }}
-            className="relative max-w-md mx-auto"
-          >
-            <Image
-              src="/mock/mock1.png"
-              alt="TaskGate App Screenshot"
-              width={400}
-              height={800}
-              className="w-full h-auto rounded-3xl shadow-2xl"
-            />
-          </motion.div>
         </div>
       </motion.section>
 
